@@ -59,7 +59,7 @@ sep.Size = UDim2.new(0, 226, 0, 1)
 
 -- Scripts:
 
-local function JWYQRZ_fake_script() -- Timer.colors 
+local function VXNSGRG_fake_script() -- Timer.colors 
 	local script = Instance.new('LocalScript', Timer)
 
 	game:GetService("RunService").Heartbeat:Connect(function()
@@ -69,8 +69,8 @@ local function JWYQRZ_fake_script() -- Timer.colors
 		wait()
 	end)
 end
-coroutine.wrap(JWYQRZ_fake_script)()
-local function VIGGH_fake_script() -- Timer.countdown 
+coroutine.wrap(VXNSGRG_fake_script)()
+local function QAPLSP_fake_script() -- Timer.countdown 
 	local script = Instance.new('LocalScript', Timer)
 
 	for i = 100, 0, -1 do
@@ -78,8 +78,8 @@ local function VIGGH_fake_script() -- Timer.countdown
 		wait(1)
 	end
 end
-coroutine.wrap(VIGGH_fake_script)()
-local function WDTOLCJ_fake_script() -- Timer.drag 
+coroutine.wrap(QAPLSP_fake_script)()
+local function TBJNCI_fake_script() -- Timer.drag 
 	local script = Instance.new('LocalScript', Timer)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -122,4 +122,4 @@ local function WDTOLCJ_fake_script() -- Timer.drag
 		end
 	end)
 end
-coroutine.wrap(WDTOLCJ_fake_script)()
+coroutine.wrap(TBJNCI_fake_script)()
