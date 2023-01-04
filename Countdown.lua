@@ -62,7 +62,7 @@ sep.Size = UDim2.new(0, 226, 0, 1)
 local function SOFO_fake_script() -- Timer.countdown 
 	local script = Instance.new('LocalScript', Timer)
 
-	for i = 40, 0, -1 do
+	for i = 60, 0, -1 do
 		script.Parent.timerUI.tick.Text = tostring(i)
 		wait(1)
 	end
