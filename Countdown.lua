@@ -12,7 +12,7 @@ local sep = Instance.new("Frame")
 --Properties:
 
 Timer.Name = "Timer"
-Timer.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Timer.Parent = game.CoreGui
 Timer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 timerUI.Name = "timerUI"
@@ -29,7 +29,7 @@ title.BackgroundTransparency = 1.000
 title.Position = UDim2.new(0.225663707, 0, -0.01369863, 0)
 title.Size = UDim2.new(0, 124, 0, 21)
 title.Font = Enum.Font.SourceSans
-title.Text = "Time until rolling"
+title.Text = "serverhop timer"
 title.TextColor3 = Color3.fromRGB(255, 0, 98)
 title.TextScaled = true
 title.TextSize = 14.000
@@ -62,10 +62,11 @@ sep.Size = UDim2.new(0, 226, 0, 1)
 local function SOFO_fake_script() -- Timer.countdown 
 	local script = Instance.new('LocalScript', Timer)
 
-	for i = 60, 0, -1 do
+	for i = 28, 0, -1 do
 		script.Parent.timerUI.tick.Text = tostring(i)
 		wait(1)
 	end
+	script.Parent.timerUI.tick.Text = "hopping..."
 end
 coroutine.wrap(SOFO_fake_script)()
 local function QGGWE_fake_script() -- Timer.drag 
