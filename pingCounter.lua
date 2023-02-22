@@ -2,7 +2,7 @@
 if you're not using a loadstring then take these out of the commented space.
 getgenv().showPing = true
 getgenv().updatePing = true
-getgenv().size = 23 --// ur desire
+getgenv().size = 18 --// ur desire
 getgenv().font = 'Monospace' --// 2 lazy to add check if not right input will break if it isnt set to Plex, System, UI, or Monospace
 ]]
 local display = Drawing.new('Text')
@@ -22,7 +22,7 @@ while updatePing == true do
             display.Text = ping..' ms'
             display.Size = size
             display.Font = Drawing.Fonts[font]
-        elseif ping <= 200 then
+        elseif ping <= 300 then
             spike = false
             display.Color = Color3.fromRGB(207, 115, 29) --// Orange/High 
             display.Text = ping..' ms'
@@ -31,7 +31,7 @@ while updatePing == true do
         else
             display.Font = Drawing.Fonts[font]
             display.Text = ping..' ms {PING SPIKE}'
-            display.Size = 35
+            display.Size = 27
             display.Color = Color3.fromRGB(255, 0, 0) --// Really Red
             wait(0.2)                                 --// Blinks red and black when spiking high
             display.Color = Color3.fromRGB(20, 20, 20) --// Black
